@@ -1,2 +1,2 @@
 # DSA
-Exclusively Data Structures and Algorithms
+Exercism tasks on the Python Track
