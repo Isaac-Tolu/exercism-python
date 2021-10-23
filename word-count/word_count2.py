@@ -9,6 +9,6 @@ def count_words(sentence):
     new_sentence = sentence.translate(translate_table)
 
     word_list = [word.strip("'") for word in new_sentence.lower().split()]
-    count_dict = dict(Counter(word_list))
+    count_dict = Counter(word_list)
     
     return count_dict

@@ -10,4 +10,4 @@ def count_words(sentence):
 
     word_list = [word.strip("'") for word in sentence.lower().split()]
 
-    return dict(Counter(word_list))
+    return Counter(word_list)
