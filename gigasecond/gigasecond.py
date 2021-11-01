@@ -1,9 +1,7 @@
-from datetime import datetime
+from datetime import timedelta
 
 def add(moment):
     
-    stamp = moment.timestamp() + 1000000000
+    passed_time = timedelta(seconds=+1000000000)
 
-    return datetime.fromtimestamp(stamp)
-
-print(add(datetime(2011, 4, 25, 0, 0)))
+    return moment + passed_time
